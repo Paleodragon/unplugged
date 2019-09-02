@@ -109,11 +109,17 @@ header{
 }
 header.content-wrapper{
   display: flex;
+  width: 100%;
+  margin: 0;
+}
+.header-divider{
+  width: 100%;
 }
 header nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 61%;
 }
 
 /* Footer Styles */
@@ -122,11 +128,16 @@ footer{
   justify-content: center;
   align-items: center;
 }
+footer.content-wrapper{
+  width: 100%;
+}
 footer.footer-content{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 53%;
+  margin: 50px 0;
 }
  /*Mobile styles -- homepage*/
  .hero-area{
@@ -140,17 +151,29 @@ footer.footer-content{
 section.features{
   display: flex;
 }
+section.features.item-description{
+  margin: 0;
+}
 .features-items{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 55%;
 }
 section.reviews{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  width: 100%;
 }
+
+section.reviews h3,
+section.reviews img,
+section.reviews article{
+  width: 88%;
+}
+
 
 /* ==========================================================================
    Helper classes
